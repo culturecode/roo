@@ -352,8 +352,10 @@ class Roo::Base
   # control characters and white spaces around columns
 
   def each(options = {})
-    if options.empty?
-      1.upto(last_row) do |line|
+    if first_row.nil?
+      # Sheet is empty
+    elsif options.empty?
+      first_row.upto(last_row) do |line|
         yield row(line)
       end
     else
