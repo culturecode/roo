@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'roo/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'roo'
+  spec.name          = 'culturecode-roo'
   spec.version       = Roo::VERSION
   spec.authors       = ['Thomas Preymesser', 'Hugh McGowan', 'Ben Woosley']
   spec.email         = ['ruby.ruby.ruby.roo@gmail.com']
